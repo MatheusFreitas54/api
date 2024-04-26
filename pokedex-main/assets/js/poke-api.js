@@ -28,6 +28,7 @@ pokeApi.getPokemosDetail = (pokemon) => {
 pokeApi.getPokemos = (offset = 0 , limit = 6) => {
      
     const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
+    console.log(url);
      return fetch(url)
         .then((response) => response.json())
         .then((jsonBody) => jsonBody.results)
@@ -79,4 +80,6 @@ searchInput.addEventListener('input', () => {
             });
     }
 });
+
+
 
