@@ -3,6 +3,8 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: #000;
+    height: 60px;
 }
 
 i {
@@ -229,7 +231,9 @@ h1{
     color: #678fee;
 }
 
-/* Seu CSS existente */
+select {
+    color: #6d6d6d;
+}
 
 /* Estilos para o modal */
 .modal {
@@ -251,11 +255,13 @@ h1{
     border: 1px solid #888;
     width: 70%;
     border-radius: 20px;
+    max-width: 1000px;
 }
 
 .modal-close {
     width: 99%;
-    height: 5px;
+    height: 20px;
+    
 }
 
 .modal-poke {
@@ -270,12 +276,16 @@ h1{
 }
 
 .close {
-    color: #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #202020;
     float: right;
     font-size: 28px;
     font-weight: bold;
     width: 40px;
     height: 40px;
+    /* border: 1px solid red; */
 }
 
 .close:hover,
@@ -289,9 +299,54 @@ h1{
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-bottom: 10px;
+    height: 0;
+    color: #303030;
 }
 
 #modal-number {
-    font-size: 25px;
-    font-weight:500
+    font-size: 20px;
+    font-weight:400;
+    color: #363636;
+}
+
+.modal-types {
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    width: 150px;
+}
+
+.modal-type {
+    /* margin-right: 20px; */
+    border-radius: 10px;
+    padding:3px 12px;
+    border: 1px solid #747474;
+}
+
+#modal-details {
+    margin-left: 5px;
+    max-width: 400px;
+    padding: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    #modal-details {
+        margin-left: 60px; 
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #modal-image {
+        width: 60%; /* Defina o tamanho desejado para a imagem */
+        height: auto; /* Manter a proporção da imagem */
+    }
+
+    nav {
+        width: 60%;
+    }
 }

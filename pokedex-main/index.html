@@ -27,6 +27,28 @@
             <!--<h1>PokeDex<p class="journey">Sua Jornada Inicia Aqui!</p></h1>-->
         </div>
         <nav>
+            <select name="" id="pokemonstipos">
+                <option disabled selected>Selecione o Tipo:</option>
+                <option value="normal">Normal</option>
+                <option value="grass" >Grass</option>
+                <option value="fire">Fire</option>
+                <option value="water">Water</option>
+                <option value="electric">Electric</option>
+                <option value="ice">Ice</option>
+                <option value="ground">Ground</option>
+                <option value="flying">Flying</option>
+                <option value="poison">Poison</option>
+                <option value="fighting">Fighting</option>
+                <option value="psychic">Psychic</option>
+                <option value="dark">Dark</option>
+                <option value="rock">Rock</option>
+                <option value="bug">Bug</option>
+                <option value="ghost">Ghost</option>
+                <option value="steel">Steel</option>
+                <option value="dragon">Dragon</option>
+                <option value="fairy">Fairy</option>
+            </select>
+            
             <input type="text" name="" id="searchInput" placeholder="Busque aqui...">
             <button id="searchButton"><img src="./assets/img/lupa.png" alt="Buscar" class="icon"></button>
         </nav>
@@ -47,13 +69,13 @@
             </button>
         </div>
 <!-- Modal -->
-<div id="modal" class="modal">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
+ <div id="modal" class="modal">
+    <!-- <div class="modal-dialog modal-sm">
+        <div class="modal-content"> -->
             <div class="modal-close">
                 <span class="close">&times;</span>
             </div>
-            <div class="modal-poke">  
+            <!-- <div class="modal-poke">  
                 <img id="modal-image" src="" alt="Imagem do Pokémon">
                 <div id="modal-details">
                     <div class="poke-name">
@@ -64,11 +86,11 @@
                     
                     <p id="modal-description"></p>
                 </div>
-            </div>
+            </div> -->
             
-        </div>
-    </div>
-</div>
+       <!-- </div>
+    </div> -->
+</div> 
 
     </section>
 </body>
@@ -77,5 +99,10 @@
 <script src="assets/js/pokemon-model.js" defer></script>
 <script src="assets/js/poke-api.js" defer></script>
 <script src="assets/js/main.js" defer></script>
+
+<!-- <ol class="types">
+    <li class="type water">water</li>
+    <li class="type poison">poison</li>
+</ol> -->
 
 </html>
