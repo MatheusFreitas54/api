@@ -349,6 +349,19 @@ select {
     nav {
         width: 60%;
     }
+
+    .modal-poke {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .poke-name {
+        margin: 20px 0px;
+    }
+
+    #copyright > p {
+        display: none;
+    }
 }
 
 /* copyright */
